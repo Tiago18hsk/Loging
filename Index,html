@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Roblox</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://www.roblox.com/favicon.ico') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Estilo del contenedor principal */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Estilo de la caja de login */
+        .login-box {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro translúcido */
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Título */
+        h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo de los campos de texto */
+        .textbox {
+            margin-bottom: 20px;
+        }
+
+        .textbox input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            outline: none;
+            background-color: #fff;
+        }
+
+        .textbox input:focus {
+            border-color: #4CAF50;
+        }
+
+        /* Botón de inicio de sesión */
+        .btn-login {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #45a049;
+        }
+
+        /* Enlace de registro */
+        .register-link {
+            color: white;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Iniciar sesión</h1>
+            <form action="#" method="POST">
+                <div class="textbox">
+                    <input type="text" id="username" name="username" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn-login">Iniciar sesión</button>
+                <p class="register-link">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
